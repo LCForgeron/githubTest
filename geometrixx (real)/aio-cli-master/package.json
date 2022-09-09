@@ -1,0 +1,132 @@
+{
+  "name": "@adobe/aio-cli",
+  "description": "Adobe I/O Extensible CLI\n\n*******   *******\n******     ******\n*****       *****\n****    *    ****\n***    ***    ***\n**    *****    **\n*         **    *\n",
+  "version": "7.1.0",
+  "author": "Adobe Inc.",
+  "bin": {
+    "aio": "./bin/run",
+    "adobe": "./bin/run"
+  },
+  "bugs": "https://github.com/adobe/aio-cli/issues",
+  "dependencies": {
+    "@adobe/aio-cli-plugin-events": "^1.1.5",
+    "@adobe/aio-cli-plugin-app": "^7.0.2",
+    "@adobe/aio-cli-plugin-auth": "^2.4.1",
+    "@adobe/aio-cli-plugin-certificate": "^0.3.0",
+    "@adobe/aio-cli-plugin-config": "^2.3.0",
+    "@adobe/aio-cli-plugin-console": "^3.3.0",
+    "@adobe/aio-cli-plugin-info": "^2.0.0",
+    "@adobe/aio-cli-plugin-runtime": "^4.0.0",
+    "@oclif/color": "^0.1.2",
+    "@oclif/command": "^1.8.0",
+    "@oclif/config": "^1.17.0",
+    "@oclif/plugin-autocomplete": "^0.3.0",
+    "@oclif/plugin-help": "^2.2.3",
+    "@oclif/plugin-not-found": "^1.2.4",
+    "@oclif/plugin-plugins": "^1.10.0",
+    "@oclif/plugin-warn-if-update-available": "^1.7.0",
+    "chalk": "^4.1.1",
+    "cli-ux": "^5.5.1",
+    "inquirer": "^7.3.3",
+    "node-fetch": "^2.6.1",
+    "ora": "^4.1.0",
+    "semver": "^7.3.5"
+  },
+  "devDependencies": {
+    "@adobe/eslint-config-aio-lib-config": "^1.2.0",
+    "@oclif/dev-cli": "^1",
+    "acorn": "^7.1.1",
+    "babel-runtime": "^6.26.0",
+    "eslint": "^6.0.0",
+    "eslint-config-oclif": "^1",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-jest": "^23.13.2",
+    "eslint-plugin-jsdoc": "^21.0.0",
+    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "execa": "^4.0.2",
+    "jest": "^26.6.3",
+    "jest-fetch-mock": "^3.0.0",
+    "jest-junit": "^10.0.0",
+    "jest-plugin-fs": "^2.9.0",
+    "stdout-stderr": "^0.1.9"
+  },
+  "engines": {
+    "node": "^12 || ^14"
+  },
+  "files": [
+    "/bin",
+    "/src",
+    "/oclif.manifest.json",
+    "/package-lock.json"
+  ],
+  "homepage": "https://github.com/adobe/aio-cli",
+  "keywords": [
+    "oclif"
+  ],
+  "license": "Apache-2.0",
+  "main": "src/index.js",
+  "oclif": {
+    "commands": "./src/commands",
+    "bin": "aio",
+    "plugins": [
+      "@oclif/plugin-help",
+      "@oclif/plugin-plugins",
+      "@oclif/plugin-autocomplete",
+      "@oclif/plugin-not-found",
+      "@oclif/plugin-warn-if-update-available",
+      "@adobe/aio-cli-plugin-config",
+      "@adobe/aio-cli-plugin-console",
+      "@adobe/aio-cli-plugin-runtime",
+      "@adobe/aio-cli-plugin-app",
+      "@adobe/aio-cli-plugin-auth",
+      "@adobe/aio-cli-plugin-certificate",
+      "@adobe/aio-cli-plugin-info",
+      "@adobe/aio-cli-plugin-events"
+    ],
+    "warn-if-update-available": {
+      "timeoutInDays": 7,
+      "message": "<%= config.name %> update available from <%= chalk.yellowBright(config.version) %> to <%= chalk.yellowBright(latest) %>.\nRun <%= chalk.greenBright('npm install -g ' + config.name) %> to update."
+    },
+    "repositoryPrefix": "<%- repo %>/blob/<%- version %>/<%- commandPath %>"
+  },
+  "jest": {
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "src/**/*.js"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 100,
+        "lines": 100,
+        "statements": 100
+      }
+    },
+    "testPathIgnorePatterns": [
+      "<rootDir>/test/jest.setup.js"
+    ],
+    "reporters": [
+      "default",
+      "jest-junit"
+    ],
+    "testEnvironment": "node",
+    "setupFilesAfterEnv": [
+      "<rootDir>/test/jest.setup.js"
+    ]
+  },
+  "repository": "adobe/aio-cli",
+  "scripts": {
+    "postpack": "rm -f oclif.manifest.json",
+    "test": "jest --ci",
+    "pretest": "npm run eslint",
+    "eslint": "eslint src test e2e",
+    "gen-health": "node bin/gen-health-table.js",
+    "prepack": "oclif-dev manifest && oclif-dev readme",
+    "version": "oclif-dev readme && git add README.md",
+    "link": "ln -s \"$(pwd)\"/bin/run /usr/local/bin/aio",
+    "unlink": "rm /usr/local/bin/aio",
+    "e2e": "jest --collectCoverage=false --testRegex './e2e/e2e.js'"
+  }
+}

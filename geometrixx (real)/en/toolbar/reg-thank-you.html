@@ -1,0 +1,374 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+   <meta charset="utf-8" />
+   <title>Thank you for Registering</title>
+   <link rel="canonical" href="register.html" />
+   <link rel="shortcut icon" href="/geometrixx/etcs/designs/geometrixx-outdoors/favicon.ico" />
+
+
+   <script type="text/javascript">document.documentElement.className += ' js';    
+	   function searchIt(){
+        location.href="/geometrixx/en/toolbar/search.html?q="+$("#search-field").val();
+    }
+	
+	   /*@cc_on(function(){var e=['abbr','article','aside','audio','canvas','details','figcaption','figure','footer','header','hgroup','mark','meter','nav','output','progress','section','summary','time','video'];for (var i = e.length; i-- > 0;) document.createElement(e[i]);})();@*/
+      function submitReg() {
+         var g = ""+$("#gender input:checked").attr("value")
+		 var fav = ""+$("#favsport input:checked").attr("value")		 
+         if (g != "" && fav != ""){
+            window.location = '/geometrixx/en/shopping/reg-thank-you.html?gender=' + g + '&favsport='+fav;
+         }
+      }
+   </script>
+
+
+   <link href="/geometrixx/designs/geometrixx-outdoors.css" rel="stylesheet" type="text/css">
+
+   <link rel="stylesheet" href="/geometrixx/designs/geometrixx-outdoors/clientlibs_desktop_v1.css" type="text/css">
+   <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js' type='text/javascript'></script>
+
+   <link rel="alternate" data-cq-role="site.variant" title="English" hreflang="en" data-bmap-devgroups="browser,oldBrowser,highResolutionDisplay" href="register.html" data-bmap-currentvar="true" />
+
+   <link rel="alternate" data-cq-role="site.variant" title="English" hreflang="en" data-bmap-devgroups="smartphone,tablet,highResolutionDisplay" href="/geometrixx/en/toolbar/register.html" />
+
+
+
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <script src='http://lab.adobetarget.com/geometrixx/js/VisitorAPI.js' type='text/javascript'></script>
+   <!--<script type="text/javascript" src="http://lab.adobetarget.com/geometrixx/js/mbox.js"></script>-->
+
+   <!-- DTM HEADER TAG GOES HERE -->
+
+
+
+
+	
+		  <script>
+        var digitalData = digitalData || {};
+        digitalData = {
+            page: {
+				pageInfo: {
+            		pageName:"Toolbar:Registration Completion"					
+				},
+				category: {
+					primaryCategory:"Toolbar",
+					subCategory1:"",
+					pageType:"User",
+					server:"Geometrixx Outdoors"
+				}
+			}
+        };
+    </script>
+
+</head>
+
+
+<body class="page">
+
+
+   <div class="page-header-content">
+      <header>
+         <div class="page-systemnav">
+            <div class="sys-nav-wrapper">
+               <div class="search">
+                  <form class="search-form" action="/geometrixx/en/toolbar/search.html" method="get">
+                     <p class="search-field">
+                        <label for="search-field" style="display: none">Search: </label>
+                        <input id="search-field" type="text" name="q" placeholder="Search" value="" />
+                     </p>
+                     <p class="search-submit">
+                        <input type="submit" />
+                     </p>
+                  </form>
+               </div>
+
+               <div class="userinfo">
+                  <nav>
+                     <ul>
+
+                        <li class="cartpage">
+
+
+                           <script id="cq-hovercart-template" type="text/x-handlebars-template">
+                              <div id="cq-hovercart">
+                                 <div class="cq-hovercart-border">
+                                    <div class="cq-hovercart-inner">
+                                       <h1>{{title}}</h1> {{#unless cartEmpty}}
+
+                                       <a class="cq-hovercart-checkout" href="/content/geometrixx-outdoors/en/shopping/checkout.html">Checkout ➙</a>
+
+                                       <table>
+                                          {{#each entries}}
+                                          <tr data-product-page="{{this.page}}">
+                                             <td class="cq-hovercart-thumb"><img src="{{this.thumbnail}}" alt="{{this.title}}" />
+                                             </td>
+                                             <td class="cq-hovercart-product-title">
+                                                <a href="{{this.page}}">{{this.title}}</a> {{#if this.promotion}}
+                                                <div class="cq-hovercart-promotion">{{{this.promotion.message}}}</div>
+                                                {{/if}}
+                                             </td>
+                                             <td class="cq-hovercart-quantity">{{this.quantity}}</td>
+                                             <td class="cq-hovercart-price">{{this.priceFormatted}}</td>
+                                          </tr>
+                                          {{/each}} {{#each promotions}}{{#if this.message}}{{#unless this.cartEntry}}
+                                          <tr>
+                                             <td class="cq-hovercart-promotion" colspan="4">{{{this.message}}}</td>
+                                          </tr>
+                                          {{/unless}}{{/if}}{{/each}}
+                                       </table>
+                                       {{/unless}}
+                                       <div class="clearfix"></div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </script>
+
+                           <a href="cart.html" class="cq-hovercart-link">My Cart</a>
+                        </li>
+
+                        <li class="login cq-cc-profile-anonymous">
+                           <div class="parbase login sociallogin">
+
+
+
+
+
+                              <link rel="stylesheet" href="http://lab.adobetarget.com/L730-etc/clientlibs/social/connect/themes/default.css" type="text/css">
+                              <script type="text/javascript" src="http://lab.adobetarget.com/geometrixx/clientlibs/social/connect.js"></script>
+
+
+
+
+
+                              <a href="register.html#" onclick="window.location='http://lab.adobetarget.com/geometrixx/en/toolbar/register.html'" class="geosociallogin-signin-sociallogin-content-geometrixx-outdoors-en
+           -user-register-jcr-content-userinfo-sociallogin">
+                </a><a href="/geometrixx/en/toolbar/register.html">Sign In or Register
+            </a>
+
+                              <div id="sociallogin-content-geometrixx-outdoors-en-user-register-jcr-content-userinfo-sociallogin" class="social-login-popup">
+                                 <div class="cqlogin">
+
+
+
+
+
+                                    <div class="parsys_column colctrl-2c">
+                                       <div class="parsys_column colctrl-2c-c0">
+                                          <div class="title section">
+                                             <h2>Member sign in
+            </h2>
+                                          </div>
+                                          <div class="parbase login section">
+                                             <script type="text/javascript">
+                                                function cq5forms_validate_login() {
+                                                   console.log("some validation will happen here.");
+                                                }
+                                             </script>
+                                             <div class="text section">If you already have an account you can sign in below.</div>
+
+                                             <form method="POST" id="sociallogin" name="sociallogin" enctype="multipart/form-data" onsubmit="return cq5forms_validate_sociallogin();">
+
+                                                <input type="hidden" name="resource" value="&#x2f;content&#x2f;geometrixx-outdoors&#x2f;en&#x2f;user&#x2f;register.html">
+                                                <input type="hidden" name="_charset_" value="UTF-8" />
+
+                                                <p class="login_username_group">
+                                                   <label for="sociallogin_username">Username
+                                                   </label>
+                                                   <input id="sociallogin_username" class="cqusername form_field form_field_text login_username" type="text" name="j_username" tabindex="9990" />
+                                                </p>
+
+                                                <p class="login_password_group">
+                                                   <label for="sociallogin_password">Password
+                                                   </label>
+                                                   <input id="sociallogin_password" class="form_field form_field_text login_password cqpassword" type="password" autocomplete="off" name="j_password" tabindex="9991" />
+                                                </p>
+
+                                                <p class="login_submit_group">
+                                                   <label for="login_submit">
+                                                      <input id="login_submit" class="form_button_submit" type="submit" value="Sign in" tabindex="9992" />
+                                                   </label>
+                                                </p>
+                                             </form>
+                                          </div>
+                                       </div>
+
+                                       <div class="parsys_column colctrl-2c-c1">
+                                          <div class="title section">
+                                             <h2>Create account</h2>
+                                          </div>
+                                          <div class="text parbase section">
+                                             <ul>
+                                                <li>Get free shipping on all orders of $100 or more</li>
+                                                <li>Free returns, always</li>
+                                                <li>Express checkout</li>
+                                                <li>Save and share your favorite products with your friends</li>
+                                             </ul>
+                                          </div>
+                                          <div class="submit section">
+                                             <div class="form_row">
+                                                <div class="form_leftcol">
+                                                   <div class="form_leftcollabel"><span>&nbsp;</span>
+                                                   </div>
+                                                   <div class="form_leftcolmark">&nbsp;</div>
+                                                </div>
+                                                <div class="form_rightcol">
+                                                   <form action="&#x2f;content&#x2f;geometrixx-outdoors&#x2f;en&#x2f;user&#x2f;register.html">
+                                                      <input type="submit" class="form_button_submit" name="create" value="Create Account" />
+                                                   </form>
+                                                </div>
+                                             </div>
+                                             <div class="form_row_description"></div>
+                                          </div>
+                                       </div>
+
+                                    </div>
+
+                                 </div>
+
+
+                                 <div style="clear:both"></div>
+
+                                 <div class="submit section">
+                                    <div class="form_row">
+                                       <div class="form_leftcol">
+                                          <div class="form_leftcollabel"><span>&nbsp;</span>
+                                          </div>
+                                          <div class="form_leftcolmark">&nbsp;</div>
+                                       </div>
+                                       <div class="form_rightcol">
+                                          <input type="submit" tabindex="9993" class="form_button_submit login_facebook" name="create" value="Sign in with Facebook &rsaquo;" onclick="console.debug(
+                           'sociallogin\x2Dcontent\x2Dgeometrixx\x2Doutdoors\x2Den\x2Duser\x2Dregister\x2Djcr\x2Dcontent\x2Duserinfo\x2Dsociallogin',
+                           '\x2Fetc\x2Fcloudservices\x2Ffacebookconnect\x2Fgeometrixx\x2Doutdoorsfacebookapp',
+                           'cb4da2dbc7a22ad11bacb8e39ef92929',
+                           '/j_security_check',
+                           ''
+                       );return false;" />
+                                       </div>
+                                    </div>
+                                    <div class="form_row_description"></div>
+                                 </div>
+
+                                 <div class="submit section">
+                                    <div class="form_row">
+                                       <div class="form_leftcol">
+                                          <div class="form_leftcollabel"><span>&nbsp;</span>
+                                          </div>
+                                          <div class="form_leftcolmark">&nbsp;</div>
+                                       </div>
+                                       <div class="form_rightcol">
+                                          <input type="submit" tabindex="9994" class="form_button_submit login_twitter" name="create" value="Sign in with Twitter &rsaquo;" onclick="console.debug(
+                           'sociallogin\x2Dcontent\x2Dgeometrixx\x2Doutdoors\x2Den\x2Duser\x2Dregister\x2Djcr\x2Dcontent\x2Duserinfo\x2Dsociallogin',
+                           '\x2Fetc\x2Fcloudservices\x2Ftwitterconnect\x2Fgeometrixx\x2Doutdoors\x2Dtwitter\x2Dapp',
+                           '968485696f92b673e2c44ebbdf097e94',
+                           '/j_security_check',
+                           ''
+                       );return false;" />
+                                       </div>
+                                    </div>
+                                    <div class="form_row_description"></div>
+                                 </div>
+
+                              </div>
+
+                           </div>
+                        </li>
+
+                     </ul>
+                  </nav>
+               </div>
+
+            </div>
+         </div>
+         <div class="topnav" id="topnav">
+            <div class="nav-wrapper ">
+               <nav>
+
+                  <h1><a href="../../index.html">English</a></h1>                  <ul>
+                     <li class="topnav-item-3&#x20;topnav-last"><a href="/geometrixx/en/equipment.html">Equipment</a>
+                     </li>
+                     <li class="topnav-item-1&#x20;topnav-first&#x20;topnav-last"><a href="/geometrixx/en/men.html">Men&#x27;s</a>
+                     </li>
+                     <li class="topnav-item-2&#x20;topnav-last"><a href="/geometrixx/en/women.html">Women&#x27;s</a>
+                     </li>
+                     <li class="topnav-item-4&#x20;topnav-last"><a href="#">Activities</a>
+                     </li>
+                     <li class="topnav-item-5&#x20;topnav-last"><a href="#">Community</a>
+                     </li>
+                     <li class="topnav-item-6&#x20;topnav-last"><a href="#">Support</a>
+                     </li>
+                     <li class="topnav-item-7&#x20;topnav-last"><a href="#">Brand</a>
+                     </li>
+                  </ul>
+               </nav>
+               <div class="topnavshadow"></div>
+            </div>
+
+         </div>
+
+      </header>
+
+   </div>
+   <div id="main" class="page-main">
+
+      <div class="page-content">
+         <div class="breadcrumb">
+            <ul>
+               <li class="breadcrumb-item-2 breadcrumb-first"><a href="../../index.html">English</a>
+               </li>
+               <li class="breadcrumb-item-4 breadcrumb-last"><a href="register.html">Register</a>
+               </li>
+            </ul>
+         </div>
+
+         <div class="par parsys">
+			<h3>Thank you for Registering.</h3>
+            <br/>
+			<br/>
+            <br/>
+			<br/>			 
+         </div>
+         <div class="page-footer">
+
+            <footer>
+               <nav>
+                  <div class="toolbar">&nbsp;&nbsp;<a href="../toolbar/about-us.html" class="first">About Us</a><a href="../toolbar/privacy-policy.html">Privacy Policy</a><a href="../toolbar/terms-of-use.html">Terms of Use</a>
+                  </div>
+               </nav>
+               <p class="copyright">© 2015 Geometrixx Outdoors. All rights reserved.</p>
+            </footer>
+
+         </div>
+
+      </div>
+
+
+
+
+
+      <!--
+More detailed timing info is available by uncommenting some code in the timing.jsp component
+Timing chart URL:
+http://chart.apis.google.com/chart?chtt=register.html+%2847ms%29&cht=bhs&chxt=x&chco=c6d9fd,4d89f9&chbh=a&chds=0,47,0,47&chxr=0,0,47&chd=t:0,0,0,0,16,16,16,16,16,16,16,16,16,16,16,16,16,16,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,47,47,47,47|0,0,16,16,0,0,0,0,0,0,0,0,0,0,0,16,16,16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,15,15,15,0,0,0,0&chly=config.jsp|contexthub%29|contexthub.jsp|head.jsp|init.jsp|mvt_stats.jsp|stats.jsp|servicelibs.jsp|browsermap.jsp|init.jsp|clientcontext_optimize...|search.jsp|template.jsp|hovercart.jsp|cqlogin.jsp|sociallogin.jsp|userinfo.jsp|header.jsp|topnav.jsp|breadcrumb.jsp|abacus.jsp|init.jsp|init.jsp|clientvalidation.jsp|clientvalidation.jsp|init.jsp|clientvalidation.jsp|init.jsp|clientvalidation.jsp|formclientvalidation.jsp|addfields.jsp|start.jsp|accountname.jsp|password.jsp|text.jsp|parsys.jsp|main.jsp|hidden.jsp|end.jsp|toolbar.jsp|footer.jsp&chs=600x500
+-->
+
+
+      <div class="servicecomponents cloudservices">
+      </div>
+
+
+
+
+      <script src='http://lab.adobetarget.com/geometrixx/js/s_code.js' type='text/javascript'></script>
+      <script type="text/javascript">
+         s.pageName = s.eVar3 = location.pathname;
+         s.t();
+      </script>
+	   
+<script type="text/javascript">_satellite.pageBottom();</script>
+</body>
+
+
+</html>
